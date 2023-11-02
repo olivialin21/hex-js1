@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>六角 JS 必修篇最終作業 - todolist 待辦事項</title>
+  <link rel="shortcut icon" href="./img/logo-s.png"/>
+  <link rel="apple-touch-icon" href="./img/logo-s.png"/>
+  <meta name='description' content="六角 JS 必修篇最終作業 - todolist 待辦事項" />
+  <meta property="og:title" content="六角 JS 必修篇最終作業 - todolist 待辦事項" />
+  <meta property="og:description" content="JavaScript todolist">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="FB上的網址" />
+  <meta property="og:image" content="./img/logo-s.png" />
+  <link rel="stylesheet" href="./css/all.css">
+</head>
+<body>
+  <div class="container">
+    <h1>TODO LIST</h1>
+    <div class="card input">
+      <input id="input_content" type="text" placeholder="請輸入待辦事項" />
+      <a href="#" class="btn_add">+</a>
+    </div>
+    <div class="card card_list">
+      <ul class="tab">
+        <li data-class="全部" class="active">全部</li>
+        <li data-class="待完成">待完成</li>
+        <li data-class="已完成">已完成</li>
+      </ul>
+      <div class="cart_content">
+        <ul class="list">
+          <li class="list_empty">
+            目前沒有待辦事項
+          </li>
+        </ul>
+        <div class="list_footer">
+          <p>0 個待完成項目</p>
+          <a href="#">清除已完成項目</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/all.js"></script>
+</body>
+</html>
