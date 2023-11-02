@@ -68,6 +68,12 @@ btn_add.addEventListener("click", (e) => {
   list_data.push({ event: input_content.value, status: "待完成" });
   input_content.value = "";
   alert("成功新增項目");
+  // 新增項目後切回全部分類，提升用戶體驗
+  list_status = "全部";
+  tabs.forEach(item => {
+    item.classList.remove("active")
+    if (item.getAttribute("data-status") == "全部") item.classList.add('active');
+  });
   render();
 });
 
